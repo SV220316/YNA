@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
         body{
@@ -10,31 +11,59 @@
             background: transparent;
         }
         .chat_container{
-            border-radius: 4vh;
+            border-radius: 8vh;
             width: 98vw;
             height: 69vh;
-            background: black;
+            background: #222;
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
             margin-top: 1vh;
         }
         .input_container{
-            border-radius: 4vh;
+            border-radius: 6vh;
             width: 98vw;
             height: 15vh;
-            background: blue;
+            background: rgba(255, 255, 255, 0.5);
             position: fixed;
             left: 50%;
             bottom: 0;
             transform: translateX(-50%);
             margin-bottom: 1vh;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+        }
+        #usr_input{
+            border-style: none;
+            padding: 2.25vh 3vh 2.25vh 3vh;
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5vh;
+            border-radius: 6vh;
+            background: rgba(255,255,255,0.5);
+        }
+        #usr_send{
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+            text-decoration: none;
+            font-size: 4vh;
         }
     </style>
 </head>
 
 <body>
     <div class="chat_container"></div>
-    <div class="input_container"></div>
+    <div class="input_container">
+        <a href="#" class="fa fa-microphone" id="usr_send"></a>
+        <input type="text" name="" placeholder="Ask Yuna.." id="usr_input">
+        <a href="#" class="fa fa-send" id="usr_send"></a>
+    </div>
 </body>
 </html>
