@@ -1,7 +1,7 @@
 /* UI */
 body{
     margin:0;
-    background: black;
+    background: transparent;
 }
 .chat_container::before, .input_container::before {
     content: "";
