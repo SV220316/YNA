@@ -10,36 +10,52 @@
             margin:0;
             background: transparent;
         }
-        .chat_container{
+        .chat_container, .input_container {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid white;
+            box-shadow: none;
+        }
+
+        .chat_container {
             border-radius: 8vh;
             width: 98vw;
             height: 69vh;
-            background: rgba(255, 255, 255, 0.5);
+            background: linear-gradient(-45deg, rgba(185, 187, 255, 0.6), rgba(255, 193, 179, 0.6));
             backdrop-filter: blur(12.5px);
             -webkit-backdrop-filter: blur(12.5px);
-            border: 1px solid white;
-            position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
             margin-top: 1vh;
         }
-        .input_container{
+
+        .input_container {
             border-radius: 6vh;
             width: 98vw;
             height: 15vh;
-            background: rgba(255, 255, 255, 0.5);
-            position: fixed;
-            left: 50%;
+            background: rgba(185, 187, 255, 0.6);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
             bottom: 0;
-            transform: translateX(-50%);
             margin-bottom: 1vh;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
-            backdrop-filter: blur(7px);
-            -webkit-backdrop-filter: blur(7px);
-            border: 1px solid white;
         }
+        .chat_container::before, 
+        .input_container::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: inherit;
+            z-index: -1;
+            background: linear-gradient(-45deg, rgba(185, 187, 255, 0.75), rgba(255, 193, 179, 0.75));
+            filter: blur(10px);
+            opacity: 1;
+        }
+
         #usr_input{
             border-style: none;
             padding: 2.25vh 3vh 2.25vh 3vh;
@@ -47,13 +63,13 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 5vh;
             border-radius: 6vh;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.7);
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
         }
         #usr_send{
-            width: 10vh;
-            height: 10vh;
+            width: 8.5vh;
+            height: 8.5vh;
             background: rgba(255, 255, 255, 0.5);
             border-radius: 50%;
             display: flex;
