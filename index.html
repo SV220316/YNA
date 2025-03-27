@@ -12,7 +12,7 @@
 
 <body onload="onld()">
     <audio id="audio" autoplay controls style="display:none;"></audio>
-    <div class="chat_container">
+    <div class="chat_container" id="cc">
         <div class="top_bar">
             <img src="memoji.jpg" id="img"/>
             <h2 style="margin: 0 3vh 0 -0.25vh;">Yuna AI</h2>
@@ -20,7 +20,7 @@
         <h1 id="overlay"></h1>
         <div id="conversation"></div>
     </div>
-    <div class="input_container">
+    <div class="input_container" id="ic">
         <a href="#" onclick="togAud()" class="fa fa-microphone" id="usr_send"></a>
         <input type="text" name="" placeholder="Ask Yuna.." id="usr_input">
         <a href="#" onclick="Send()" class="fa fa-send" id="usr_send"></a>
