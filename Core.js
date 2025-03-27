@@ -8,6 +8,14 @@ function onld(){
     document.getElementById("overlay").innerText = "Hi there! I'm Yuna. What's on your mind today Sweetie?";
     document.getElementById("audio").muted = true;
     setupVoiceRecognition();
+    document.getElementById("overlay").innerText = "Hi there! I'm Yuna. What's on your mind today Sweetie?";
+    document.getElementById("audio").muted = true;
+    document.getElementById("cc").style.marginTop = "1vh";
+    document.getElementById("cc").style.animation = "mmg";
+    document.getElementById("cc").style.animationDuration = "2s";
+    document.getElementById("ic").style.animation = "fade";
+    document.getElementById("ic").style.animationDuration = "2s";
+    document.getElementById("ic").style.opacity = "1";
 }
 
 function Send(){
