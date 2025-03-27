@@ -11,6 +11,7 @@
 </head>
 
 <body onload="onld()">
+    <audio id="audio" autoplay controls style="display:none;"></audio>
     <div class="chat_container">
         <div class="top_bar">
             <img src="memoji.jpg" id="img"/>
@@ -20,7 +21,7 @@
         <div id="conversation"></div>
     </div>
     <div class="input_container">
-        <a href="#" class="fa fa-microphone" id="usr_send"></a>
+        <a href="#" onclick="togAud()" class="fa fa-microphone" id="usr_send"></a>
         <input type="text" name="" placeholder="Ask Yuna.." id="usr_input">
         <a href="#" onclick="Send()" class="fa fa-send" id="usr_send"></a>
     </div>
