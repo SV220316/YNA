@@ -1,7 +1,7 @@
 /* UI */
 body{
     margin:0;
-    background: black;
+    background: transparent;
 }
 .chat_container::before, .input_container::before {
     content: "";
@@ -62,7 +62,7 @@ body{
 .top_bar h2{
     color: #4c4c4c;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .top_bar #img{
