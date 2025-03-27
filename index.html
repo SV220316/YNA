@@ -8,13 +8,16 @@
     <style>
         body{
             margin:0;
-            background: transparent;
+            background: blue;
         }
         .chat_container{
             border-radius: 8vh;
             width: 98vw;
             height: 69vh;
-            background: #222;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12.5px);
+            -webkit-backdrop-filter: blur(12.5px);
+            border: 1px solid white;
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
@@ -33,6 +36,9 @@
             justify-content: space-evenly;
             align-items: center;
             display: flex;
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border: 1px solid white;
         }
         #usr_input{
             border-style: none;
@@ -41,11 +47,13 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 5vh;
             border-radius: 6vh;
-            background: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
         #usr_send{
-            width: 60px;
-            height: 60px;
+            width: 8.5vh;
+            height: 8.5vh;
             background: rgba(255, 255, 255, 0.5);
             border-radius: 50%;
             display: flex;
